@@ -1,7 +1,6 @@
 {
   "name": "dsh-token-saving",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "DSH 版 token-saving —— 省 Token 工作法插件。",
   "main": "./index.js",
