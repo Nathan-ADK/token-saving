@@ -1,0 +1,26 @@
+{
+  "name": "dsh-token-saving",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH 版 token-saving —— 省 Token 工作法插件。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./core": "./src/core.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src",
+    "catalog",
+    "rules.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "token", "prompt", "省token"],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

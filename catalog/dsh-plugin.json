@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Yan-Zero/dsh-std/3df054302468d2091859db4b3bd079042d33f100/packages/manifest/schema/dsh-plugin-0.15.schema.json",
+  "manifestVersion": "0.15",
+  "id": "dev.wbd.token-saving",
+  "name": "token-saving",
+  "version": "1.0.0",
+  "description": "省 Token 工作法：向 Agent 注入上下文/输出精简规则，附带 token 估算与文本压缩建议工具。零依赖、无网络、无子进程。",
+  "facets": {
+    "host": {
+      "entry": "index.js",
+      "apiVersion": "v1alpha1"
+    }
+  },
+  "license": "MIT",
+  "source": {
+    "repository": "https://github.com/wbd-tools/token-saving"
+  },
+  "x-ecosystem-packaging": {
+    "runtime": "纯本地字符串处理：读取 rules.md、估算 token、给出压缩建议；不发起网络请求、不启动子进程、不监听端口。",
+    "adapterIsolation": "src/core.js 只做纯函数计算，不接触 DSH 运行时；index.js 是唯一适配层，负责把 core 注册为 ctx 工具。",
+    "provenance": "与 npm 包 token-saving 同源，核心规则与算法共享；DSH 版按 dsh-plugin 0.15 manifest 打包。"
+  }
+}
